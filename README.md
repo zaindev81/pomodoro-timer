@@ -12,6 +12,10 @@ A beautiful and functional Pomodoro Timer built with SvelteKit and Tailwind CSS.
 - 📱 **Responsive**: Works perfectly on all devices
 - 🧠 **Focus Mode**: Updates browser title with current timer status
 
+## Privacy
+
+All your data is stored locally in your browser's `localStorage`. No data is ever sent to a server, so your privacy is 100% guaranteed.
+
 ## How to Use
 
 1. Click **Start** to begin a 25-minute work session
@@ -53,3 +57,9 @@ The Pomodoro Technique is a time management method developed by Francesco Cirill
 3. Work on the task until the timer rings
 4. Take a short break (5 minutes)
 5. Every four work sessions, take a longer break (15 minutes)
+
+## Todo
+
+- [ ] Export CSV
+- [ ] Export List
+- [ ] AI Interactive
