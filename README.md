@@ -35,6 +35,66 @@ npm run dev
 npm run dev -- --open
 ```
 
+## Testing
+
+The project includes comprehensive test coverage with both unit tests and end-to-end tests.
+
+### Running Tests
+
+```sh
+# Run all tests (unit + e2e)
+npm test
+
+# Run only unit tests
+npm run test:unit
+
+# Run unit tests in watch mode (during development)
+npm run test:unit -- --watch
+
+# Run only end-to-end tests
+npm run test:e2e
+
+# Run e2e tests in headed mode (see browser)
+npm run test:e2e -- --headed
+
+# Run e2e tests in debug mode
+npm run test:e2e -- --debug
+```
+
+### Test Coverage
+
+#### Unit Tests (`src/routes/page.svelte.spec.ts`)
+- Component rendering and initial state
+- Timer formatting functionality
+- Button interactions (start, pause, reset)
+- Session switching logic
+- Progress calculation
+- Timer state management
+- Audio notification mocking
+
+#### End-to-End Tests
+**Basic Functionality (`e2e/pomodoro-timer.test.ts`)**
+- Initial page load and UI elements
+- Timer display and session switching
+- Start/pause/reset functionality
+- Session counter updates
+- Progress circle animations
+- UI state changes
+
+**Advanced Functionality (`e2e/timer-functionality.test.ts`)**
+- Full work session cycle simulation
+- Session transitions and automatic switching
+- Browser title updates during timer
+- Keyboard accessibility
+- Progress tracking accuracy
+- Mobile responsiveness
+
+### Test Technologies
+- **Unit Tests**: Vitest with `@vitest/browser` for Svelte component testing
+- **E2E Tests**: Playwright for cross-browser testing
+- **Mocking**: Web Audio API mocking for notification sounds
+- **Coverage**: Component interaction and user workflow testing
+
 ## Building
 
 To create a production version of your app:
